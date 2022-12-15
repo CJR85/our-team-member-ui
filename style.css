@@ -48,6 +48,10 @@ body {
   overflow: hidden;
 }
 
+.container .icon .imgBox.active {
+  box-shadow: 0 0 0 6px #222, 0 0 0 12px #ff1d50;
+}
+
 .container .icon .imgBox img {
   position: absolute;
   top: 0;
@@ -56,4 +60,11 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  transform: rotate(calc(-360deg / 8 * var(--i)));
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+
+.container .icon .imgBox.active img {
+  filter: grayscale(0);
 }
