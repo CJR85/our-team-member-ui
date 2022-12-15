@@ -68,3 +68,19 @@ body {
 .container .icon .imgBox.active img {
   filter: grayscale(0);
 }
+
+.content {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  inset: 60px;
+  border: 4px solid transparent;
+  border-left: 4px solid #2196f3;
+  border-right: 4px solid #fff;
+  border-radius: 50%;
+}
