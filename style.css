@@ -208,4 +208,11 @@ body {
   align-items: center;
   background: #444;
   color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.contentBx .card .textBx .sci li a:hover {
+  background: #2196f3;
 }
